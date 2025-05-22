@@ -4,15 +4,15 @@
 	let { data } = $props();
 
 	// STATES
-	let count = $state(data.count);
+	// let count = $state(data.count);
 
 	// OUTPUT
 	// $inspect(data);
-	$effect(() => {
-		setInterval(() => {
-			count -= 1;
-		}, 1000);
-	});
+	// $effect(() => {
+	// 	setInterval(() => {
+	// 		count -= 1;
+	// 	}, 1000);
+	// });
 
 	let player = $state();
 
@@ -30,7 +30,8 @@
 	{#snippet pending()}
 		<div class="flex flex-1 flex-col items-center justify-center gap-5">
 			<p class="p-2 text-9xl">🐧</p>
-			<p>loading songs... {count}</p>
+			<p>loading songs...</p>
+			<!-- <p>loading songs... {count}</p> -->
 		</div>
 	{/snippet}
 </svelte:boundary>

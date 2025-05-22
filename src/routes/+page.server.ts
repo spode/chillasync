@@ -19,7 +19,7 @@ export const load = (async () => {
 
     if (videos[0]) {
 
-        return { videos: delayed(videos, count), count };
+        return { videos, count };
     } else {
         error(404, {
             message: 'No data available'
